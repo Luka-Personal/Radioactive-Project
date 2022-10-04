@@ -1,0 +1,113 @@
+/* 1000px */
+@media (max-width: 62.5em) {
+  .grid-2__cls {
+    grid-template-columns: 1fr;
+    gap: 0;
+    row-gap: 4rem;
+  }
+  .i1 {
+    grid-column: 1 / 3;
+  }
+  .main-btn.shop {
+    margin: 5rem auto 10rem auto;
+  }
+  html {
+    font-size: 55%;
+  }
+  .ticket-box {
+    gap: 2rem;
+  }
+}
+/* 800px */
+@media (max-width: 50em) {
+  /* album */
+  .album-box__main {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  /* listen */
+  .grid-3__cls {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* video */
+  .watch-video {
+    height: 50rem;
+  }
+  /* ticket stuff */
+  .ticket-box {
+    flex-direction: column;
+  }
+  .ticket-loc {
+    max-width: 100%;
+  }
+  .ticket-loc span,
+  .ticket-loc p {
+    text-align: start;
+    display: inline;
+  }
+  .tkt-btn {
+    width: fit-content;
+  }
+  html {
+    font-size: 50%;
+  }
+}
+/* 500px 31.25rem */
+@media (max-width: 31.25em) {
+  /* video */
+  .watch-video {
+    height: 35rem;
+  }
+  .watch-main {
+    padding: 0 3rem;
+  }
+  /* listen */
+  .grid-3__cls {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .listen-box__main div,
+  .follow-box div {
+    min-width: 220px;
+    width: fit-content;
+  }
+  /* read */
+  .biography.pt1 {
+    margin: 3rem auto 8rem;
+  }
+  .biography.pt2 {
+    display: none;
+  }
+  .icon-header.open {
+    display: block;
+  }
+  .social-text {
+    color: rgba(255, 0, 0);
+    text-align: center;
+  }
+  .social-box a:link,
+  .social-box a:visited {
+    background-color: transparent;
+  }
+
+  .social-box__js {
+    position: absolute;
+    right: 9999px;
+  }
+  html {
+    font-size: 45%;
+  }
+  /* album */
+  .album-img {
+    max-width: 50rem;
+    width: 100%;
+    height: unset;
+  }
+  /* shop */
+  .shop-merch {
+    width: 100%;
+  }
+  .shows-box {
+    width: 100%;
+  }
+}

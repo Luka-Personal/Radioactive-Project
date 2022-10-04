@@ -1,0 +1,36 @@
+:root {
+  --bg-red-gradient: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9)), url("/bg.jpg");
+  --bg-black-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("/bg.jpg");
+}
+.album-section {
+  background-image: var(--bg-black-gradient);
+  padding-bottom: 16rem;
+}
+.listen-section {
+  background-image: var(--bg-red-gradient);
+  padding-bottom: 16rem;
+}
+.watch-section {
+  background-image: var(--bg-black-gradient);
+  padding-bottom: 16rem;
+}
+.follow-section {
+  background-image: var(--bg-red-gradient);
+  padding-bottom: 16rem;
+}
+.shop-section {
+  background-image: var(--bg-black-gradient);
+  padding-bottom: 16rem;
+}
+.attend-section {
+  background-image: var(--bg-red-gradient);
+  padding-bottom: 16rem;
+}
+.read-section {
+  background-image: var(--bg-black-gradient);
+  padding-bottom: 16rem;
+}
+.subscribe-section {
+  background-image: var(--bg-red-gradient);
+  padding-bottom: 16rem;
+}

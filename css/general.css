@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Montserrat, Arial, sans-serif;
+  background-image: linear-gradient(to bottom, #fd0000, #e60001, #d00002, #ba0002, #a50002, #a50002, #a50002, #a50002, #ba0002, #d00002, #e60001, #fd0000);
+  overflow-x: hidden;
+}
+/* containers */
+.main-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  margin-top: 100vh;
+}
+.secondary-container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+}
+/* headers */
+.main-header {
+  text-align: center;
+  color: #fff;
+  padding-top: 10rem;
+  font-family: "Dusk Demon";
+  font-size: 6.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 8px;
+  margin-bottom: 10rem;
+}
+.secondary-header,
+.paragraph {
+  margin-top: 2.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Dusk Demon";
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+/* PARAGRAPH */
+.paragraph {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+/* BUTTONS&LINKS  */
+.listen-box__main div a:link,
+.follow-box div a:link,
+.listen-box__main div a:visited,
+.follow-box div a:visited {
+  font-size: 2rem;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 2rem 1.5rem 2rem 2rem;
+  display: flex;
+  height: 6.4rem;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.5s;
+  box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.45);
+}
+.listen-box__main div a:hover,
+.follow-box div a:hover,
+.listen-box__main div a:active,
+.follow-box div a:active {
+  background-color: #000;
+  color: #fff;
+  fill: #fff;
+}
+.main-btn:link,
+.main-btn:visited {
+  color: #000;
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  margin: 12rem auto 0;
+  font-size: 2rem;
+  background-color: #fff;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.8rem 6.5rem;
+  outline: 1px solid #fff;
+  position: relative;
+  outline-offset: 1rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.main-btn:hover,
+.main-btn:active {
+  background-color: #d00002;
+  outline: 1px solid #d00002;
+  color: #fff;
+}
+/* ARROW */
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 3.5rem solid transparent;
+  border-right: 3.5rem solid transparent;
+  border-top: 3.5rem solid rgb(199, 1, 4);
+  transform: translateX(-50%);
+}
+/* FXIERS */
+.black {
+  border-top: 3.5rem solid #000; /* change arrow color to black in listen section */
+}
+.red {
+  border-top: 3.5rem solid rgb(255, 0, 0, 0.9); /* change arrow color to black in watch section */
+}
+/* GRID */
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+.grid-3__cls {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-2__cls {
+  gap: 6rem;
+  row-gap: 10rem;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
