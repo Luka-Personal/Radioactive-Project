@@ -1,6 +1,6 @@
 :root {
-  --bg-red-gradient: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9)), url("/bg.jpg");
-  --bg-black-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("/bg.jpg");
+  --bg-red-gradient: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.9)), url("/img/bg.jpg");
+  --bg-black-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url("/img/bg.jpg");
 }
 .album-section {
   background-image: var(--bg-black-gradient);
