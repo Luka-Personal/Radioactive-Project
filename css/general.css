@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -9,6 +10,24 @@ html {
 }
 body {
   font-family: Montserrat, Arial, sans-serif;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#fd0000),
+    color-stop(#e60001),
+    color-stop(#d00002),
+    color-stop(#ba0002),
+    color-stop(#a50002),
+    color-stop(#a50002),
+    color-stop(#a50002),
+    color-stop(#a50002),
+    color-stop(#ba0002),
+    color-stop(#d00002),
+    color-stop(#e60001),
+    to(#fd0000)
+  );
+  background-image: -o-linear-gradient(top, #fd0000, #e60001, #d00002, #ba0002, #a50002, #a50002, #a50002, #a50002, #ba0002, #d00002, #e60001, #fd0000);
   background-image: linear-gradient(to bottom, #fd0000, #e60001, #d00002, #ba0002, #a50002, #a50002, #a50002, #a50002, #ba0002, #d00002, #e60001, #fd0000);
   overflow-x: hidden;
 }
@@ -62,14 +81,21 @@ body {
   gap: 2rem;
   background-color: #fff;
   padding: 2rem 1.5rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 6.4rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: rgb(255, 0, 0);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.45);
   box-shadow: 10px 10px 40px hsla(0, 0%, 0%, 0.45);
 }
 .listen-box__main div a:hover,
@@ -84,6 +110,8 @@ body {
 .main-btn:visited {
   color: #000;
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-decoration: none;
   margin: 12rem auto 0;
@@ -97,6 +125,8 @@ body {
   position: relative;
   outline-offset: 1rem;
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 .main-btn:hover,
@@ -115,6 +145,8 @@ body {
   border-left: 3.5rem solid transparent;
   border-right: 3.5rem solid transparent;
   border-top: 3.5rem solid rgb(199, 1, 4);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 /* FXIERS */
@@ -126,15 +158,18 @@ body {
 }
 /* GRID */
 .grid {
+  display: -ms-grid;
   display: grid;
   gap: 3rem;
 }
 .grid-3__cls {
+  -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-2__cls {
   gap: 6rem;
   row-gap: 10rem;
+  -ms-grid-columns: 1fr 6rem 1fr;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
